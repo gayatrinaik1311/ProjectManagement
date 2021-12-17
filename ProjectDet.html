@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="#default" class="heading" style="color: blueviolet;"><h2>PROJECT MANAGEMENT</h2></a>
+            <img id="logo" src="logo1.jpg" alt="This is logo of Project Managament" width="10%"> 
+            <div class="header-right">
+                <a href="homepg.html" >Home</a>
+                <a href="SignUp.html" target="_blank">SignUp</a>
+                <a href="signIn.html" target="_blank">SignIn</a>
+            </div>
+        </nav>
+    </div>
+    <h1 style="padding: 5px;">Project Details</h1>
+    <div class="login">
+        
+     
+        <form action="proj.php" method="POST">
+		    <label for="pid"><b>ProjectID:</b></label>
+			<input type="text" name="pid"><br><br>
+            <label for="pname"><b>Project Name: </b></label>
+            <input type="text" name="pname" required><br><br>
+			<label for="start"><b>Start Date: </b></label>
+            <input type="date" name="start"><br><br>
+			<label for="end"><b>End Date: </b></label>
+            <input type="date" name="end"><br><br>
+			<label for="pmid"><b>Project_ManagerID: </b></label>
+            <input type="number" name="pmid" required><br><br>
+            <label for="status"><b>Project Status: </b></label><br>
+            <input type = "radio" name = "status" value = "InQueue">In Queue<br>
+            <input type = "radio" name = "status" value = "InProgress">In Progress<br>
+			<input type = "radio" name = "status" value = "Completed">Completed<br>
+			<input type = "radio" name = "status" value = "Cancelled">Cancelled<br>		
+            <br><br>
+			<label for="cid"><b>ClientID: </b></label>
+            <input type="number" name="cid" required><br><br>
+             
+            <input type="reset" value="Reset">
+            <input type="submit" name="submit" value="Submit">
+        
+        </form>
+    </div>
+    <footer>
+        <p style="margin: 0%;">Author: Gayatri Naik</br>
+        <a href="https://www.google.com/" target="_blank">For more information</a></p>
+        <p>Copyright &copy;2021</p>
+        <a href="www.facebook.com" target="_blank"> <img src="fb.jpg" width="40" alt="Facebook"></a>
+        <a href="www.youtube.com" target="blank"> <img src="youtube.jpg" width="40" height="40" alt="Youtube"></a>
+        <a href="www.twitter.com" target="blank"> <img src="twitter.png" width="40" height="40" alt="Twitter"></a>
+        
+    </footer>
+    
+</body>
+</html>

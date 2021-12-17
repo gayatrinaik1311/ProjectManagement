@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SignUp Form</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="#default" class="heading" style="color: blueviolet;"><h2>PROJECT MANAGEMENT</h2></a>
+            <img id="logo" src="logo1.jpg" alt="This is logo of Project Managament" width="10%"> 
+            <div class="header-right">
+                <a href="homepg.html" >Home</a>
+                <a href="SignUp.html" target="_blank">SignUp</a>
+                <a href="signIn.html" target="_blank">SignIn</a>
+            </div>
+        </nav>
+    </div>
+    <h1 style="padding: 5px;">Sign Up</h1>
+    <div class="login">
+        
+     
+        <form action="signup.php" method="POST">
+		    <label for="uid"><b>User ID:</b></label>
+			<input type="number" name="uid"><br><br>
+            <label for="fname"><b>First Name: </b></label>
+            <input type="text" name="fname" required><br><br>
+			<label for="lname"><b>Last Name: </b></label>
+            <input type="text" name="lname" required><br><br>
+            <label for="gender"><b>Gender: </b></label>
+            <input type = "radio" name = "gender" value = "male"> Male
+            <input type = "radio" name = "gender" value = "Female"> Female
+            <br><br>
+            <label for="email"><b>Email: </b></label>
+            <input type="text" name="email" required><br><br>
+            <label for="dob"><b>Date of Birth: </b></label>
+            <input type="date" name="dob"><br><br>
+            <label for="phno"><b>Phone Number: </b></label>
+            <input type="tel" name="phno" id="phno"><br><br>
+     
+			<label for="un"><b>Username:</b></label>
+			<input type="text" name="un"><br><br>
+            <label for="password"><b>Password: </b></label>
+            <input type="password" name="password" required><br><br>
+                   
+            
+            <p>By creating your account you agree to our <a href="#" style="color: blue;">Terms and Privacy</a></p>
+            <input type="reset" value="Reset">
+            <input type="submit" name="submit" value="Submit">
+        
+        </form>
+    </div>
+    <footer>
+        <p style="margin: 0%;">Author: Gayatri Naik</br>
+        <a href="https://www.google.com/" target="_blank">For more information</a></p>
+        <p>Copyright &copy;2021</p>
+        <a href="www.facebook.com" target="_blank"> <img src="fb.jpg" width="40" alt="Facebook"></a>
+        <a href="www.youtube.com" target="blank"> <img src="youtube.jpg" width="40" height="40" alt="Youtube"></a>
+        <a href="www.twitter.com" target="blank"> <img src="twitter.png" width="40" height="40" alt="Twitter"></a>
+        
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Client Details</title>
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="#default" class="heading" style="color: blueviolet;"><h2>PROJECT MANAGEMENT</h2></a>
+            <img id="logo" src="logo1.jpg" alt="This is logo of Project Managament" width="10%"> 
+            <div class="header-right">
+                <a href="homepg.html" >Home</a>
+                <a href="SignUp.html" target="_blank">SignUp</a>
+                <a href="signIn.html" target="_blank">SignIn</a>
+            </div>
+        </nav>
+    </div>
+    <h1 style="padding: 5px;">Client Details</h1>
+    <div class="login">
+        
+     
+        <form action="client.php" method="POST">
+		    <label for="cid"><b>Client ID:</b></label>
+			<input type="text" name="cid"><br><br>
+        
+			<label for="cname"><b>First Name: </b></label>
+            <input type="text" name="cname" required><br><br>
+			<label for="cname"><b>Last Name: </b></label>
+            <input type="text" name="cname" required><br><br>
+            <label for="cemail"><b>Email: </b></label>
+            <input type="text" name="cemail" required><br><br>
+            <label for="phno"><b>Phone Number: </b></label>
+            <input type="tel" name="phno" id="phno"><br><br>
+            <label for="addr"><b>Address: </b></label>
+            <input type="text" name="addr" required><br><br><br> 			
+             
+            <input type="reset" value="Reset">
+            <input type="submit" name="submit" value="Submit"><br><br>
+			
+			<br><br>
+        
+        </form>
+    </div>
+    <footer>
+        <p style="margin: 0%;">Author: Gayatri Naik</br>
+        <a href="https://www.google.com/" target="_blank">For more information</a></p>
+        <p>Copyright &copy;2021</p>
+        <a href="www.facebook.com" target="_blank"> <img src="fb.jpg" width="40" alt="Facebook"></a>
+        <a href="www.youtube.com" target="blank"> <img src="youtube.jpg" width="40" height="40" alt="Youtube"></a>
+        <a href="www.twitter.com" target="blank"> <img src="twitter.png" width="40" height="40" alt="Twitter"></a>     
+    </footer>
+    
+</body>
+</html>
